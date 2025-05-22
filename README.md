@@ -35,6 +35,7 @@ Um chatbot desenvolvido em Python que auxilia no aprendizado da língua inglesa,
 
 - Python
 - Telegram Bot API
+- Gemini AI
 
 ## 🤝 Contribuindo
 
