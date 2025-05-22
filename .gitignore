@@ -1,0 +1,15 @@
+# Ignorar ambiente virtual
+venv/
+
+# Ignorar arquivos de cache do Python
+__pycache__/
+*.pyc
+
+# Ignorar arquivos de variáveis de ambiente
+.env
+
+# Ignorar arquivos específicos do sistema operacional (ex: macOS)
+.DS_Store
+
+# Ignorar logs de depuração (se você tiver um arquivo de log específico)
+*.log
