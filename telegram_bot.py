@@ -67,20 +67,6 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     logger.info(f'Comando /start recebido de {user_id}')
 
 
-async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
-    """Handles any text message received from the user."""
-    user_id = update.effective_chat.id
-    user_message = update.message.text
-
-    logger.info(f'Mensagem recebida de {user_id}: "{user_message}"')
-
-    await update.message.reply_text(f"Recebi sua mensagem: '{user_message}'. Estou processando...")
-
-    if user_id not in chats_history:
-        chats_history[user_id] = []
-    chats_history[user_id].append({"role": "user", "parts": [{"text": user_message}]})
-
-
 async def reset_chat(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     """Resets the chat history for the user."""
     user_id = update.effective_chat.id
