@@ -37,7 +37,7 @@ except ValueError as e:
     exit(1)
 
 
-with open('teste_teste.txt', "r", encoding="utf-8") as file:
+with open('example.txt', "r", encoding="utf-8") as file:
     example_conversation = file.read()
 
 # Instructions for the Model (AI Persona)
